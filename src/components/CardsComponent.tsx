@@ -60,7 +60,7 @@ export default function CardsComponent({ query }: { query: string }) {
 
   return (
     <div style={{ display: "grid", gap: 20, gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))" }}>
-      {books.slice(0, 20).map((b) => {
+      {books.slice(0, 100).map((b) => {
         b.cover_i
           ? `https://covers.openlibrary.org/b/id/${b.cover_i}-M.jpg`
           : undefined;
