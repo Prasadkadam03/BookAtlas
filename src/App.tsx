@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div className="font-inter  text-slate-900 pt-1 min-h-screen">
       <div className="sticky top-5 z-10 mt-5">
-        <NavBar onSearch={setQuery} />
+        <NavBar onSearch={setQuery} />     {/* NavBar component with onSearch prop to update query state */}
       </div>
 
       <main className="mx-auto max-w-6xl p-6">
@@ -20,7 +20,7 @@ export default function App() {
           Results for: <span className="italic">{query}</span>
         </h2>
 
-        <CardsComponent query={query} />
+        <CardsComponent query={query} />  {/* CardsComponent to display books based on the query */}
       </main>
     </div>
   );

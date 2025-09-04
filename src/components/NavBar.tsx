@@ -11,7 +11,7 @@ export default function NavBar({ onSearch }: { onSearch: (q: string) => void }) 
             </h1>
 
             <form
-                onSubmit={(e) => { e.preventDefault(); onSearch(text.trim()); }}
+                onSubmit={(e) => { e.preventDefault(); onSearch(text.trim()); }} // Handle form submission
                 className="flex items-center w-full md:w-min px-6 md:p-0 justify-center"
                 role="search"
                 aria-label="Book search"
