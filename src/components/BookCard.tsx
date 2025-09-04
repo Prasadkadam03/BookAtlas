@@ -14,7 +14,7 @@ export default function BookCard({ book }: { book: BookDoc }) {
             <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-2xl p-2 flex items-center justify-center h-80 w-full shadow-md shadow-gray-400">
                 <img
                     alt={book.title}
-                    src={coverUrl || "src/assets/No-Image.png"}         // Fallback image if no cover available
+                    src={coverUrl || "/No-Image.png"}         // Fallback image if no cover available
                     className="w-full h-full object-cover rounded-2xl"
                 />
             </div>
