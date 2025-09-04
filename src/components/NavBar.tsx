@@ -4,15 +4,15 @@ export default function NavBar({ onSearch }: { onSearch: (q: string) => void }) 
     const [text, setText] = useState("");
 
     return (
-        <nav className="flex  items-center justify-between bg-indigo-500 p-4 px-12 m-4 rounded-full">
-            <h1 className="ps-12 font-marker text-4xl font-bold text-white">
-                <span className="text-6xl text-amber-400">B</span>OOK<span className="text-6xl text-amber-400">A</span>TLAS
+        <nav className="flex flex-col md:flex-row items-center justify-between bg-indigo-400 shadow-2xl border border-amber-100 p-4 md:px-12 mb-4 mx-2 md:mx-4 rounded-full gap-4">
+            <h1 className="font-marker text-3xl md:text-4xl font-bold text-white   hover:text-amber-500 text-center md:text-left ps-0 md:ps-12">
+                <span className="text-5xl md:text-6xl text-amber-400">B</span>OOK
+                <span className="text-5xl md:text-6xl text-amber-400">A</span>TLAS
             </h1>
-
 
             <form
                 onSubmit={(e) => { e.preventDefault(); onSearch(text.trim()); }}
-                className="flex items-center"
+                className="flex items-center w-full md:w-min px-6 md:p-0 justify-center"
                 role="search"
                 aria-label="Book search"
             >
@@ -20,12 +20,12 @@ export default function NavBar({ onSearch }: { onSearch: (q: string) => void }) 
                     type="text"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
-                    className="p-2 bg-stone-50 text-stone-900 rounded-full w-64 placeholder:text-stone-400"
-                    placeholder="Search books…"
+                    className="p-2 bg-indigo-50 text-black border rounded-full w-full md:w-64 placeholder:text-stone-700"
+                    placeholder="  Search books…🔍"
                 />
                 <button
                     type="submit"
-                    className="bg-sky-400 hover:bg-sky-500 text-white ms-2 p-2 px-5 rounded-full cursor-pointer"
+                    className="bg-amber-500 hover:bg-amber-600 text-white ms-2 p-2 px-5 rounded-full cursor-pointer"
                 >
                     Search
                 </button>
