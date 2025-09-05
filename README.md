@@ -1,69 +1,76 @@
-# React + TypeScript + Vite
+# 📚 BookAtlas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive book search and discovery web app built with **React**, **TypeScript**, and **TailwindCSS**. Fetches book data from **Open Library API** and displays details in a clean UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo & Links
 
-## Expanding the ESLint configuration
+* 🔗 **Live App:** [book-atlas.vercel.app](https://book-atlas.vercel.app/)
+* 💻 **GitHub Repo:** [github.com/prasadkadam03/bookatlas](https://github.com/prasadkadam03/bookatlas)
+* ⚡ **Try on StackBlitz:** [stackblitz.com/github/prasadkadam03/bookatlas](https://stackblitz.com/github/prasadkadam03/bookatlas)
+* 🤖 **ChatGPT Conversation:** [View Here](https://chatgpt.com/share/68ba7d20-16c4-8011-990a-401b7f8bc517)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Tech Stack
+
+* **Frontend:** React + TypeScript + TailwindCSS
+* **API:** [Open Library API](https://openlibrary.org/dev/docs/api/books)
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+BookAtlas/
+│
+├── public/              # Static files (No-Image.png, favicon, etc.)
+├── src/
+│   ├── components/      # UI Components (Navbar, BookCard, etc.)
+│   ├── assets/          # Images & icons
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css        # TailwindCSS styles
+│
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 Installation & Setup
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/prasadkadam03/bookatlas.git
+cd bookatlas
 ```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start development server
+
+```bash
+npm run dev
+```
+
+### 4️⃣ Build for production
+
+```bash
+npm run build
+```
+---
+
+## 🧑‍💻 Author
+
+**Prasad Kadam**
+📧 [Email](mailto:prasadkadam29503@gmail.com) | 🌐 [Portfolio](https://github.com/prasadkadam03)
